@@ -1,13 +1,11 @@
 import React from "react";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route } from "react-router-dom";
 
-export const AppRoute = ({ component: Component, ...rest }) => {
+export const AppRoute = ({ element: Element, ...rest }) => {
     return (
         <Route
             {...rest}
-            render={(props) => {
-                return <Component {...props} />;
-            }}
+            element={<Element {...rest} />}
         />
     );
 };
