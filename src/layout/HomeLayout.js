@@ -3,9 +3,9 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 import { routes } from "../routes"
-import { AppRoute } from "../routes/route"
 
-export const MainLayout = () => {
+export const HomeLayout = () => {
+
 	return (
 		<Routes>
 			{routes.main.map((route, id) => {

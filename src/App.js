@@ -1,12 +1,23 @@
-import { BrowserRouter } from 'react-router-dom';
+import { Fragment } from 'react';
+import { useSelector } from 'react-redux';
 import './App.css';
-import { MainLayout } from './layout/MainLayout';
+import { HomeLayout } from './layout/HomeLayout';
+import { LoginLayout } from './layout/LoginLayout';
 
 function App() {
+  const { isLogin } = useSelector((state) => state.user);
+
   return (
-    <BrowserRouter>
-      <MainLayout />
-    </BrowserRouter>
+    <Fragment>
+
+      {
+        isLogin ? (
+          <HomeLayout />
+        ) : (
+          <LoginLayout />
+        )
+      }
+    </Fragment>
   );
 }
 

@@ -4,7 +4,7 @@ import React from "react"
 import { Route, Routes } from "react-router-dom"
 import { routes } from "../routes"
 
-export const MainLayout = () => {
+export const LoginLayout = () => {
 	return (
 		<Routes>
 			{routes.login.map((route, id) => {
