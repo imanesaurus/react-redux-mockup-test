@@ -37,10 +37,12 @@ const Login = () => {
     }
 
     const handleUsername = (e) => {
-        setUsername(e.target.value)
+        dispatch(resetForm());
+        setUsername(e.target.value);
     }
 
     const handlePassword = (e) => {
+        dispatch(resetForm());
         setPassword(e.target.value)
     }
     return (
