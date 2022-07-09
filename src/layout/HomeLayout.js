@@ -8,7 +8,7 @@ export const HomeLayout = () => {
 
 	return (
 		<Routes>
-			{routes.main.map((route, id) => {
+			{routes.map((route, id) => {
 				const Component = route.element
 				return (
 					<Route key={id} path={route.path} element={<Component />} />

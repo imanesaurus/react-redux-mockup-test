@@ -12,5 +12,6 @@ export const CardContainer = styled.div`
     border-color: red;
     border: 1px solid ${COLORS.gray};
     padding: 10px;
-    box-shadow: 2px 1px 5px ${COLORS.gray}
+    box-shadow: 2px 1px 5px ${COLORS.gray};
+    padding-bottom: 50px
 `
