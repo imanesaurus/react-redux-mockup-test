@@ -9,7 +9,6 @@ import { ButtonContainer, ChartContainer, ContentContainer, Headline } from "./h
 
 const Home = () => {
     const { user } = useSelector((state) => state.user);
-    const { isLogin } = useSelector((state) => state.login);
     const dispatch = useDispatch()
 
     const tableLabels = patiensData.map(data => data.date);
@@ -18,7 +17,7 @@ const Home = () => {
         labels: tableLabels,
         datasets: [
             {
-                label: 'Patients',
+                label: 'Patients 2022',
                 data: patiensData.map((data) => Number(data.value)),
                 borderColor: COLORS.purple,
                 backgroundColor: COLORS.purple,
