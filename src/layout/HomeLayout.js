@@ -1,19 +1,24 @@
 /** @format */
 
-import React from "react"
-import { Route, Routes } from "react-router-dom"
-import { routes } from "../routes"
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { routes } from '../routes';
 
-export const HomeLayout = () => {
-
-	return (
-		<Routes>
-			{routes.map((route, id) => {
-				const Component = route.element
-				return (
-					<Route key={id} path={route.path} element={<Component />} />
-				)
-			})}
-		</Routes>
-	)
+function HomeLayout() {
+  return (
+    <Routes>
+      {routes.map((route, index) => {
+        const Component = route.element;
+        return (
+          <Route
+            key={index.toString}
+            path={route.path}
+            element={<Component />}
+          />
+        );
+      })}
+    </Routes>
+  );
 }
+
+export default HomeLayout;

@@ -1,12 +1,14 @@
-import React from 'react'
-import { ButtonMain } from './button.styles'
+import React from 'react';
+import { ButtonMain } from './button.styles';
 
-const Button = ({ title, onClick, style, ...props }) => {
+function Button({
+  title, onClick, style, ...props
+}) {
   return (
     <ButtonMain onClick={onClick} style={style} {...props}>
-        {title}
+      {title}
     </ButtonMain>
-  )
+  );
 }
 
-export default Button
+export default Button;

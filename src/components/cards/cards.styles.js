@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { COLORS } from "../../constants/colors";
+import styled from 'styled-components';
+import { COLORS } from '../../constants/colors';
 
 export const CardContainer = styled.div`
     border-radius: 20px;
@@ -14,4 +14,4 @@ export const CardContainer = styled.div`
     padding: 10px;
     box-shadow: 2px 1px 5px ${COLORS.gray};
     padding-bottom: 50px
-`
+`;

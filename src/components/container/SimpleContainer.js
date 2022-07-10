@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const SimpleContainer = ({ children }) => {
-    return <div className="simple-container">{children}</div>;
-};
+function SimpleContainer({ children }) {
+  return <div className="simple-container">{children}</div>;
+}
 
 export default SimpleContainer;

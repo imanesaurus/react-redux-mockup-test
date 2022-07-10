@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MainWrapper = styled.div`
     display: flex;
@@ -6,9 +6,9 @@ export const MainWrapper = styled.div`
     flex: 1;
     justify-content: center;
     align-items: center;
-`
+`;
 
 export const TitleHeader = styled.span`
     font-size: 28px;
     margin-bottom: 60px;
-`
+`;

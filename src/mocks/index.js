@@ -1,1 +1,2 @@
-export const patiensData = require('./data.json')
+// eslint-disable-next-line global-require
+export const patiensData = require('./data.json');

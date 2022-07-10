@@ -1,7 +1,7 @@
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 
-export const ProtectedRoute = ({ children }) => {
+export function ProtectedRoute({ children }) {
   const { isLogin } = useSelector((state) => state.login);
 
   if (!isLogin) {
@@ -9,4 +9,4 @@ export const ProtectedRoute = ({ children }) => {
   }
 
   return children;
-};
+}

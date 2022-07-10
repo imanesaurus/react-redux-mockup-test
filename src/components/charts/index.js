@@ -1,7 +1,6 @@
-
 import {
-    CategoryScale, Chart as ChartJS, Legend, LinearScale, LineElement, PointElement, Title,
-    Tooltip
+  CategoryScale, Chart as ChartJS, Legend, LinearScale, LineElement, PointElement, Title,
+  Tooltip,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
@@ -12,13 +11,13 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 export const options = {
   responsive: true,
 };
 
-export const LineCharts = ({ data }) => {
+export function LineCharts({ data }) {
   return <Line options={options} data={data} />;
 }
