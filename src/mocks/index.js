@@ -1,0 +1,1 @@
+export const patiensData = require('./data.json')
